@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Hand-chopping preventor",
+  "version": "1.0",
+
+  "description": "Redirect me to golang page if I visit vanilla air page again before 2018.",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.vanilla-air.com/*"],
+      "js": ["hcp.js"]
+    }
+  ]
+
+}
